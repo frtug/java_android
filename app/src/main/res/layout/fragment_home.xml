@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlandingpage"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/white"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="6000dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view17"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="700dp"
+                android:translationY="25dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/innovatronindustries" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="581dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/backgroundtransparency50"
+                    android:translationY="100dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationY="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/newfarmanalyticav2" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maximizing agricultural potential with machine learning recommendations"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:translationY="320dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In the Philippines, agriculture is a vital sector that supports the economy and provides employment opportunities. Many farmers face challenges in choosing the right crops for their soil, leading to lower productivity. To address this, we propose a system that uses machine learning to suggest suitable crops based on soil analysis. By providing this information, the system helps inexperienced farmers make informed decisions and improve their productivity. This approach, known as precision agriculture, optimizes crop selection and contributes to the sustainable development of the Philippine agricultural sector."
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#FFFFFF"
+                    android:translationY="420dp"
+                    android:textStyle="italic"
+                    android:textSize="13sp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:translationY="750dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEATURES"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:translationY="780dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2500dp"
+                    android:orientation="horizontal"
+                    android:translationY="-150dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view8"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="500dp"
+                        android:layout_margin="20dp"
+                        android:layout_centerHorizontal="true"
+                        card_view:cardCornerRadius="4dp">
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:translationY="-75dp"
+                            card_view:srcCompat="@drawable/nasa"/>
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Integrated with WeatherAPI"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:translationY="375dp"/>
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="272dp"
+                            android:layout_height="wrap_content"
+                            android:text="WeatherAPI can help you determine your location's Temperature, Humidity and Precipitation in real-time. "
+                            android:layout_centerHorizontal="true"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:translationX="40dp"
+                            android:translationY="420dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view12"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_height="500dp"
+                        android:layout_margin="20dp"
+                        android:layout_centerHorizontal="true"
+                        card_view:cardCornerRadius="4dp">
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:translationY="-75dp"
+                            card_view:srcCompat="@drawable/opensource"/>
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Open Source"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:translationY="375dp"/>
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="272dp"
+                            android:layout_height="wrap_content"
+                            android:text="The code for this application can be open to all, as we grant the use, sharing, studying and modification of its code base. "
+                            android:layout_centerHorizontal="true"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:translationX="40dp"
+                            android:translationY="420dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view16"
+                        android:layout_gravity="center"
+                        android:layout_width="350dp"
+                        android:layout_margin="20dp"
+                        android:layout_height="500dp"
+                        android:layout_centerHorizontal="true"
+                        card_view:cardCornerRadius="4dp">
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:translationY="-75dp"
+                            card_view:srcCompat="@drawable/farmers"/>
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Art in Agriculture"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="#000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:translationY="375dp"/>
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="272dp"
+                            android:layout_height="wrap_content"
+                            android:text="The idea of machine learning and AI in the farming industry is unbelievable. With Farm Analytica, it is almost achievable."
+                            android:layout_centerHorizontal="true"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:translationX="40dp"
+                            android:translationY="420dp"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_margin="20dp"
+                android:layout_height="500dp"
+                android:translationY="1430dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Helps in the decision-making process."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15sp"
+                    android:translationY="170dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Our app helps farmers and landowners in decision making for their farm. This will give the farmers or landowners the ability to experiment with different crops, fertilizers and location. "/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/firstgraphic"
+                    android:translationY="140dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_margin="20dp"
+                android:layout_height="1200dp"
+                android:translationY="1950dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Crops thrive in different environments."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15sp"
+                    android:translationY="170dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="This recommendations and predictions are based on various parameters. The environment in which crops are grown and harvested affect production."/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/secondgraphic"
+                    android:layout_marginLeft="20dp"
+                    android:translationY="-30dp"
+                    android:layout_marginRight="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_margin="20dp"
+                android:layout_height="1000dp"
+                android:translationY="2850dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Crops have 3 primary nutrients necessary for growth."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15sp"
+                    android:translationY="220dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Nitrogen, Phosphorus and Potassium concentration values also affect crops differently. Therefore various crops require different NPK levels."/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/thirdgraphic"
+                    android:layout_marginLeft="20dp"
+                    android:translationY="10dp"
+                    android:layout_marginRight="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_margin="20dp"
+                android:layout_height="1000dp"
+                android:translationY="3670dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Crops are also considered by soil type to use."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15sp"
+                    android:translationY="170dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="The type of soil you are planting in matters because the soil type helps facilitate the growth of the crop as it receives the necessary nutrients."/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/fourthgraphic"
+                    android:translationY="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_margin="20dp"
+                android:layout_height="1000dp"
+                android:translationY="4670dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Crops are also considered by the farm area."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15sp"
+                    android:translationY="170dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="How much crop yield that will be generated can be determined by how small or large the land area of the farm is."/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/fifthgraphic"
+                    android:translationY="-110dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_margin="20dp"
+                android:layout_height="1000dp"
+                android:translationY="5290dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Crops are also considered by change in seasons."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15sp"
+                    android:translationY="210dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="textStart"
+                    android:text="Crop yield depends on seasons, for different seasons have different length of daylight, temperature, and rainfall. It also dictates the prevalance of pests and diseases, pollination and reproduction since some crops might require insects or wind for pollination."/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/sixthgraphic"
+                    android:translationY="-20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

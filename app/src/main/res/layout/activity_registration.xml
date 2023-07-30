@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundtransparency50"
+    tools:context=".registration">
+
+    <ScrollView
+        android:id="@+id/MyScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/white"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/MyVisibleView"
+            android:layout_width="match_parent"
+            android:layout_height="1800dp">
+
+            <!-- REGISTRATION -->
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_view8"
+                android:layout_width="350dp"
+                android:layout_height="1650dp"
+                android:translationY="100dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <!-- EMAIL -->
+                <TextView
+                    android:id="@+id/email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:translationY="25dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="32dp"
+                    app:startIconDrawable="@drawable/emailadd"
+                    android:translationY="50dp"
+                    app:endIconMode="clear_text"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/dark_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/requiredEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Email is required."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="120dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/validEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Email should be valid."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="142dp"
+                    android:textStyle="bold"/>
+                <!---->
+
+                <!-- FIRST NAME -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:translationY="190dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    app:startIconDrawable="@drawable/person_name"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="210dp"
+                    app:endIconMode="clear_text"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/dark_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/requiredFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Full Name is required."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="280dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/alphaFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Must contain only alphabetic characters."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="300dp"
+                    android:textStyle="bold"/>
+
+                <!---->
+
+                <!-- MOBILE NUMBER -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Mobile Number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="350dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    app:startIconDrawable="@drawable/person_name"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="370dp"
+                    app:endIconMode="clear_text"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/dark_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/requiredMobileNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Mobile Number is required."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="440dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/numMobileNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Must contain only numeric characters."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="460dp"
+                    android:textStyle="bold"/>
+                <!---->
+
+                <!-- STATE NAME -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Province"
+                    android:id="@+id/errorProvince"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:translationY="510dp"
+                    android:textStyle="bold"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <Spinner
+                    android:id="@+id/provinceSpinner"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="535dp"
+                    android:background="@drawable/spinner_style"/>
+
+                <TextView
+                    android:id="@+id/requiredProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  A province must be selected."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="595dp"
+                    android:textStyle="bold"/>
+                <!---->
+
+                <!--DISTRICT NAME-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Municipality"
+                    android:id="@+id/errorMunicipality"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:translationY="640dp"
+                    android:textStyle="bold"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <Spinner
+                    android:id="@+id/municipalitySpinner"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="665dp"
+                    android:background="@drawable/spinner_style" />
+
+                <TextView
+                    android:id="@+id/requiredMunicipality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  A municipality must be selected."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="725dp"
+                    android:textStyle="bold"/>
+                <!---->
+
+                <!-- FARM AREA -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Area"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:translationY="770dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="795dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:startIconDrawable="@drawable/location_rpm"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:boxStrokeErrorColor="#ff00"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/areaFarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/requiredFarmArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Farm Area is required, expressed in sqm."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="860dp"
+                    android:textStyle="bold"/>
+                <!---->
+
+                <!-- SOIL TYPE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soil Type"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:translationY="900dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="920dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:startIconDrawable="@drawable/soil_type"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:boxStrokeErrorColor="#ff00"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/soilType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/requiredSoilType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Soil Type is required."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="990dp"
+                    android:textStyle="bold"/>
+                <!---->
+
+                <!-- PASSWORD -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+                    android:translationY="1040dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="1060dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:startIconDrawable="@drawable/password"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:boxStrokeErrorColor="#ff00"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/requiredPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Password is required."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="1130dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/minimumPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Must be at least 8 characters."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="1150dp"
+                    android:textStyle="bold"/>
+                <!---->
+
+                <!-- CONFIRM PASSWORD -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Confirm Password"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="1200dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    app:startIconDrawable="@drawable/password"
+                    android:layout_marginEnd="32dp"
+                    android:translationY="1220dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/dark_blue"
+                    app:boxStrokeErrorColor="#ff00"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/requiredConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Confirming your password is required."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="1290dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/matchConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/form_rule_satisfied"
+                    android:text="  Must match your password."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="12dp"
+                    android:translationY="1310dp"
+                    android:textStyle="bold"/>
+
+
+                <Button
+                    android:id="@+id/registerInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="32dp"
+                    app:backgroundTint="#28A745"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#28A745"
+                    android:text="Register"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:translationY="1360dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:translationY="1410dp" />
+
+                <Button
+                    android:id="@+id/backToLogin"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Login"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#187BCD"
+                    android:textSize="16sp"
+                    android:translationY="1420dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mainapplicationbackground"
+    tools:context=".Application">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1700dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Input"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:translationY="50dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="1600dp"
+                android:translationY="120dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <!-- DATE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="10dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="35dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Month/Day/Year"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- LOCATION -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="115dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="140dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Region, Province, Municipality"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- SEASON -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Season"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="220dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="245dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Wet or Dry"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- CROP -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Crop"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="325dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="350dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ex. Rice, Coconut, Corn, Pineapple"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- SOIL TYPE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Soil Type"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="430dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="455dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ex. Rice, Coconut, Corn, Pineapple"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- AREA OF LAND -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Area of Land"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="535dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="560dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Area of Land in sqm"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- FERTILIZER RATIO -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Fertilizer Ratio"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="640dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="665dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ex. 14-14-14, 1-1-2"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- NITROGEN LEVEL -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Nitrogen Level"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="745dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="770dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Nitrogen Level"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- PHOSPHORUS LEVEL -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Phosphorus Level"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="850dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="875dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Phosphorus Level"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- POTASSIUM LEVEL -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Potassium Level"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="955dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="980dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Potassium Level"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- TEMPERATURE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Temperature"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="1060dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="1085dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Temperature in Celsius"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- HUMIDITY -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Humidity"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="1165dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="1190dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Humidity"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- PRECIPITATION -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Precipitation"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="1270dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="1295dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Precipitation"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- CROP YIELD -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Crop Yield"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="1375dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="1405dp"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/white"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Crop Yield in kg"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/afterEnterGoToHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#28A745"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#28A745"
+                    android:text="Enter"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="1510dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

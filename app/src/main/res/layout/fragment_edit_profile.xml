@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlandingpage"
+    tools:context=".EditProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/white"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1250dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDIT YOUR PROFILE"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:translationY="50dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view8"
+                android:layout_width="350dp"
+                android:layout_height="950dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardBackgroundColor="@android:color/white"
+                android:translationY="100dp"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:background="@drawable/edit_profile_icon"/>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PERSONAL INFORMATION"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#298F5E"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:translationY="200dp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#A9A9A9"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationY="250dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="285dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/updateEmail"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FULL NAME"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#A9A9A9"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationY="350dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="380dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/updateFN"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MOBILE NUMBER"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#A9A9A9"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationY="450dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="480dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/updateMN"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PROVINCE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#A9A9A9"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationY="550dp" />
+
+                <Spinner
+                    android:id="@+id/updateProvinceSpinner"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="580dp"
+                    android:background="@drawable/update_spinner_style"/>
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MUNICIPALITY"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#A9A9A9"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationY="650dp" />
+
+                <Spinner
+                    android:id="@+id/updateMunicipalitySpinner"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="680dp"
+                    android:background="@drawable/update_spinner_style"/>
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FARM AREA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#A9A9A9"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationY="750dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="780dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/updateFarmArea"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SOIL TYPE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#A9A9A9"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationY="850dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="880dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/updateSoilType"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/saveUpdatedInfoButton"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:translationY="1060dp"
+                app:backgroundTint="#28A745"
+                android:layout_centerHorizontal="true"
+                app:strokeColor="#28A745"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/backToProfile"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Back to Profile"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:translationY="1110dp"
+                app:backgroundTint="#28A745"
+                android:layout_centerHorizontal="true"
+                app:strokeColor="#28A745"
+                app:strokeWidth="2dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

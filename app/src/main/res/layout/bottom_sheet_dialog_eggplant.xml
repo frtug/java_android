@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bluegradientbg">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eggplant"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view17"
+        android:layout_width="350dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="-60dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Best Time / Season to Plant"
+            android:textAlignment="textStart"
+            android:paddingLeft="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="220dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Depends on rainfall pattern: if rainy, April to August and if dry, September to February"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maturity"
+            android:textAlignment="textStart"
+            android:paddingLeft="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="360dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="60 - 65 days after planting"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="390dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suitable Provinces to Plant"
+            android:textAlignment="textStart"
+            android:paddingStart="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="460dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aurora, Bataan, Bulacan, Nueva Ecija, Pampanga, Tarlac, Zambales, Pangasinan, La Union"
+            android:textAlignment="textStart"
+            android:paddingLeft="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="490dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applying Fertilizer"
+            android:textAlignment="textStart"
+            android:paddingLeft="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="590dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basal application: few days or weeks before planting and side dressing: 20-30 days after planting"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="620dp" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

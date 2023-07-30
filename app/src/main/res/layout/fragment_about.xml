@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlandingpage"
+    tools:context=".About">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/white"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="6050dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view17"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="700dp"
+                android:translationY="25dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/innovatronindustries" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="581dp"
+                    android:translationY="100dp"
+                    android:src="@drawable/mainaboutusbackground"/>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationY="150dp"
+                    android:src="@drawable/newfarmanalyticav2"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:translationY="360dp"
+                    android:src="@drawable/thefarmanalyticalogo"/>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:translationY="450dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:translationY="800dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MISSION, VISION AND VALUES"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:translationY="830dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view8"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="375dp"
+                android:translationY="900dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardBackgroundColor="#298F5E"
+                card_view:cardCornerRadius="4dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="OUR MISSION"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:translationY="25dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:text="Our Mission is to transform the agriculture business by providing cutting-edge crop recommendation services that harness the most recent technological, data analysis, and machine learning developments. We want to assist farmers make more educated crop decisions, increase yields, minimize waste, and improve sustainability. And is to provide farmers with precise and tailored crop suggestions using innovative technology and data analytics. We hope to assist farmers raise crop yields, cut input costs, and promote sustainable farming practices by leveraging the power of machine learning and agronomic expertise."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic"
+                    android:translationX="40dp"
+                    android:translationY="90dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_viewA"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="425dp"
+                android:translationY="1310dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardBackgroundColor="#808080"
+                card_view:cardCornerRadius="4dp">
+
+                <TextView
+                    android:id="@+id/textViewB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="OUR VISION"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:translationY="25dp" />
+
+                <TextView
+                    android:id="@+id/textViewC"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:text="Our Vision is for every farmer to have access to individualized, data-driven crop recommendations that are suited to their own requirements and circumstances. We foresee a future in which precision agriculture is the norm and farmers are empowered to make the best decisions possible for their crops, land, and communities. We think that by using our application , we can help create a more sustainable, equitable, and successful agriculture sector for future generations. And aims to transform crop decision-making by providing farmers with the knowledge and tools they need to optimize crop yield, increase profitability, and promote a more sustainable and resilient food system."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic"
+                    android:translationX="40dp"
+                    android:translationY="90dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_viewC"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:translationY="1770dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardBackgroundColor="#298F5E"
+                card_view:cardCornerRadius="4dp">
+
+                <TextView
+                    android:id="@+id/textViewD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="OUR VALUES"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:translationY="25dp" />
+
+                <TextView
+                    android:id="@+id/textViewE"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:text="-Innovation"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic"
+                    android:translationX="40dp"
+                    android:translationY="100dp" />
+
+                <TextView
+                    android:id="@+id/textViewF"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:text="-Respect: We value everyone and treat people with dignity and professionalism."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic"
+                    android:translationX="40dp"
+                    android:translationY="130dp" />
+
+                <TextView
+                    android:id="@+id/textViewG"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:text="-Teamwork: We achieve more when we collaborate and all work together."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic"
+                    android:translationX="40dp"
+                    android:translationY="180dp" />
+
+                <TextView
+                    android:id="@+id/textViewH"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:text="-Integrity: We build trust through responsible actions and honest relationships."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic"
+                    android:translationX="40dp"
+                    android:translationY="230dp" />
+
+                <TextView
+                    android:id="@+id/textViewI"
+                    android:layout_width="272dp"
+                    android:layout_height="wrap_content"
+                    android:text="-Accountability: Each of us is responsible for our words, our actions, and our results."
+                    android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic"
+                    android:translationX="40dp"
+                    android:translationY="280dp" />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:translationY="2200dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEET THE TEAM"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:translationY="2225dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/craigronquilloformal"
+                android:layout_marginStart="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:translationY="1800dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jeremiahvelascoformal"
+                android:layout_marginStart="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:translationY="2350dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pamespanolaformal"
+                android:layout_marginStart="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:translationY="2900dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/andreitumbokonformal"
+                android:layout_marginStart="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:translationY="3450dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eisencapacilloformal"
+                android:layout_marginStart="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:translationY="4000dp"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:translationY="5025dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WHO WE ARE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:translationY="5075dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Innovatron Industries was formed last 2022 as an original team of 4 members. Another member has since joined in the early part of the year. Tackling and understanding machine learning, we take on Farm Analytica, our first project that caters to land owners in order to help their endeavors in empowering farmers with useful data and for the pursuit of efficient farming. Farm Analytica marks the first time that our team will be creating both web and mobile applications. As we navigate the technological landscape with these developments, we hope that this application can help our target audience achieve their goals. With us (Craig Ronquillo, Jeremiah Velasco, Pam Espanola, Andrei Tumbokon and Eisen Capacillo) at the development process, we know that our app can help Philippine farming as it improves and adapts in the future. "
+                android:textSize="18sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:translationY="5150dp"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                android:translationY="5700dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTACT US THROUGH"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:translationY="5750dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="5800dp"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                card_view:cardElevation="30dp"
+                card_view:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="49dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/contact_email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Email"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:text="theinnovatronindustries@gmail.com"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:translationY="5925dp"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                card_view:cardElevation="30dp"
+                card_view:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:layout_width="41dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/contact_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Phone"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="277dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:text="+63 919 067 6419"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

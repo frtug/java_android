@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@drawable/backgroundlandingpage"
+    tools:context=".Crops">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/white"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="6050dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view17"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="700dp"
+                android:translationY="25dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/innovatronindustries" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="581dp"
+                    android:translationY="100dp"
+                    android:src="@drawable/maincropsbg"/>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationY="150dp"
+                    android:src="@drawable/newfarmanalyticav2"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:translationY="360dp"
+                    android:src="@drawable/thefarmanalyticalogo"/>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crops"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:translationY="450dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:translationY="800dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CROPS LIST"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:translationY="830dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information about various crops can be found here. Choosing a crop to plant allows you to consider a few things. You can choose a crop based on the environment they grow in, maturity, best regions to plant them and the time to which fertilizer can be applied."
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:translationY="890dp"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view8"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:translationY="1050dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:translationY="-75dp"
+                    app:srcCompat="@drawable/rice"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Palay"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:translationY="365dp"/>
+
+                <Button
+                    android:id="@+id/openRiceDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Learn More"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#333F50"
+                    app:strokeColor="#333F50"
+                    android:translationY="430dp"
+                    app:strokeWidth="2dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:translationY="1600dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:translationY="-75dp"
+                    app:srcCompat="@drawable/sweetpotato"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kamote"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:translationY="365dp"/>
+
+                <Button
+                    android:id="@+id/openSweetPotatoDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Learn More"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:translationY="430dp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#333F50"
+                    app:strokeColor="#333F50"
+                    app:strokeWidth="2dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:translationY="2150dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:translationY="-75dp"
+                    app:srcCompat="@drawable/potato"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patatas"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:translationY="365dp"/>
+
+                <Button
+                    android:id="@+id/openPotatoDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Learn More"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:translationY="430dp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#333F50"
+                    app:strokeColor="#333F50"
+                    app:strokeWidth="2dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:translationY="2700dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:translationY="-75dp"
+                    app:srcCompat="@drawable/tomato"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kamatis"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:translationY="365dp"/>
+
+                <Button
+                    android:id="@+id/openTomatoDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Learn More"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:translationY="430dp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#333F50"
+                    app:strokeColor="#333F50"
+                    app:strokeWidth="2dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:translationY="3250dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:translationY="-75dp"
+                    app:srcCompat="@drawable/stringbeans"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sitaw"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:translationY="365dp"/>
+
+                <Button
+                    android:id="@+id/openStringbeansDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Learn More"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:translationY="430dp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#333F50"
+                    app:strokeColor="#333F50"
+                    app:strokeWidth="2dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:translationY="3800dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:translationY="-75dp"
+                    app:srcCompat="@drawable/corn"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mais"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#000000"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:translationY="365dp"/>
+
+                <Button
+                    android:id="@+id/openCornDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Learn More"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:translationY="430dp"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#333F50"
+                    app:strokeColor="#333F50"
+                    app:strokeWidth="2dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

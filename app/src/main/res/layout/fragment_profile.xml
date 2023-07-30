@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundlandingpage"
+    tools:context=".Profile">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbVertical="@android:color/white"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2070dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view17"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="700dp"
+                    android:translationY="25dp"
+                    card_view:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="117dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/innovatronindustries" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="581dp"
+                        android:src="@drawable/anothermainprofilebackgrround"
+                        android:translationY="100dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:translationY="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/newfarmanalyticav2" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:src="@drawable/thefarmanalyticalogo"
+                        android:layout_centerHorizontal="true"
+                        android:translationY="360dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile Page"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50sp"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:translationY="450dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:translationY="800dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR PROFILE"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:translationY="830dp" />
+
+                <Button
+                    android:id="@+id/buttonToDisplayProfileInformation"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="Display Profile Information"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:translationY="880dp"
+                    app:backgroundTint="#28A745"
+                    app:strokeColor="#28A745"
+                    app:strokeWidth="2dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view8"
+                    android:layout_width="350dp"
+                    android:layout_height="960dp"
+                    android:layout_centerHorizontal="true"
+                    android:translationY="950dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:translationY="25dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/myFullName"
+                            android:hint="Enter Full Name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/buttonToEditProfile"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="#FFFFFF"
+                        android:layout_centerHorizontal="true"
+                        android:translationY="90dp"
+                        app:backgroundTint="#28A745"
+                        app:strokeColor="#28A745"
+                        app:strokeWidth="2dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"
+                        android:layout_centerHorizontal="true"
+                        android:translationY="160dp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PERSONAL INFORMATION"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#298F5E"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:translationY="200dp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:translationY="250dp" />
+
+                    <TextView
+                        android:id="@+id/actualEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:translationY="285dp" />
+
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:background="#A9A9A9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="17dp"
+                        android:translationY="330dp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FULL NAME"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:translationY="350dp" />
+
+                    <TextView
+                        android:id="@+id/actualFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:translationY="385dp" />
+
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:background="#A9A9A9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="17dp"
+                        android:translationY="430dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MOBILE NUMBER"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:translationY="450dp" />
+
+                    <TextView
+                        android:id="@+id/actualMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:translationY="485dp" />
+
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:background="#A9A9A9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="17dp"
+                        android:translationY="530dp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PROVINCE"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:translationY="550dp" />
+
+                    <TextView
+                        android:id="@+id/actualProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textSize="18sp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:translationY="585dp" />
+
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:background="#A9A9A9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="17dp"
+                        android:translationY="630dp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MUNICIPALITY"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:translationY="650dp" />
+
+                    <TextView
+                        android:id="@+id/actualMunicipality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:translationY="685dp" />
+
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:background="#A9A9A9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="17dp"
+                        android:translationY="730dp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FARM AREA"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:translationY="750dp" />
+
+                    <TextView
+                        android:id="@+id/actualFarmArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:translationY="785dp" />
+
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:background="#A9A9A9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="17dp"
+                        android:translationY="830dp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SOIL TYPE"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:translationY="850dp" />
+
+                    <TextView
+                        android:id="@+id/actualSoilType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#A9A9A9"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:translationY="885dp" />
+
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:background="#A9A9A9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="17dp"
+                        android:translationY="930dp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/buttonToLogout"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:translationY="1940dp"
+                    app:backgroundTint="#28A745"
+                    android:layout_centerHorizontal="true"
+                    app:strokeColor="#28A745"
+                    app:strokeWidth="2dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

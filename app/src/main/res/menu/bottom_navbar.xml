@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/homenavbar"/>
+    <item
+        android:id="@+id/applicationFragment"
+        android:title="Application"
+        android:icon="@drawable/applicationnavbar"> </item>
+    <item
+        android:id="@+id/cropInfoFragment"
+        android:title="Crops"
+        android:icon="@drawable/cropnavbar"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/profilenavbar"/>
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="About"
+        android:icon="@drawable/aboutnavbar"/>
+
+</menu>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/green_gradient"
+    tools:context=".Application">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view9"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="125dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardElevation="30dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:text="Create Your Schedule"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="10dp" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="63dp"
+                    android:layout_marginStart="45dp"/>
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/form_error_check"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginStart="275dp"/>
+
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/createschedule" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER CROP TO PLANT, DATE OF PLANTING THEN CREATE SCHEDULE"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:translationY="190dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:translationY="300dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="4dp">
+
+                <!-- CROP -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Input Crop"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="10dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:boxBackgroundColor="@color/white"
+                    android:translationY="35dp"
+                    android:layout_width="match_parent"
+                    app:startIconDrawable="@drawable/soil_type"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/inputCrop"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <!-- DATE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Choose Date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:translationY="115dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginStart="20dp"
+                    app:startIconDrawable="@drawable/choose_date"
+                    android:layout_marginEnd="20dp"
+                    app:boxBackgroundColor="@color/white"
+                    android:translationY="140dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chooseDate"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/createSched"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#28A745"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#28A745"
+                    android:text="CREATE SCHEDULE"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="225dp"/>
+
+                <Button
+                    android:id="@+id/backtoAppCS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="#28A745"
+                    app:strokeWidth="2dp"
+                    app:strokeColor="#28A745"
+                    android:text="BACK"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:translationY="275dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

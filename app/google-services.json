@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854590710241",
+    "firebase_url": "https://farmanalytica-default-rtdb.firebaseio.com",
+    "project_id": "farmanalytica",
+    "storage_bucket": "farmanalytica.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854590710241:android:c26e80ad1b68cde16472a0",
+        "android_client_info": {
+          "package_name": "com.example.farmanalyticav2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854590710241-onhr05319ha3ksp2ovb6dvg7jdkth993.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCputt8b-FzRiOTc4Bi8FuJtobgqFkeMoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854590710241-onhr05319ha3ksp2ovb6dvg7jdkth993.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

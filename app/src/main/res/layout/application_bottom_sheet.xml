@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="236dp"
+            android:layout_height="198dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/cropsandfarmers" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="This is Farm Analytica's Application Page. To start, we recommend that you click the button for 'Data Input' below:"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view8"
+            android:layout_gravity="center"
+            android:layout_width="375dp"
+            android:layout_height="150dp"
+            android:translationX="3dp"
+            app:cardBackgroundColor="@color/white"
+            card_view:cardElevation="30dp"
+            card_view:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/data_input"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Data Input"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:padding="16dp"
+                android:text="Input various details about your farm such as weather conditions and soil."
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/dataInputFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#28A745"
+                app:strokeWidth="2dp"
+                app:strokeColor="#28A745"
+                android:text="Input Now"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="95dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view10"
+            android:layout_gravity="center"
+            android:layout_width="375dp"
+            android:layout_height="150dp"
+            android:translationX="3dp"
+            app:cardBackgroundColor="@color/white"
+            card_view:cardElevation="30dp"
+            card_view:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/predict_and_recommend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Prediction and Recommendation"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:padding="16dp"
+                android:text="Get prediction and recommendation results for crop, fertilizer and crop yield."
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/predictionRecommendationFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#28A745"
+                app:strokeWidth="2dp"
+                app:strokeColor="#28A745"
+                android:text="Predict Now"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="245dp"
+                android:layout_marginTop="95dp"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
