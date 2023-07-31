@@ -1,5 +1,7 @@
 package com.example.farmanalyticav2;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,6 +39,8 @@ public class Login extends AppCompatActivity {
     //Registration
     Button goToRegistration;
     //Registration
+    private APIManager apiManager;
+
 
     private ProgressBar progressBar;
 
@@ -93,14 +97,31 @@ public class Login extends AppCompatActivity {
         loginInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                apiManager = new APIManager(Login.this);
+                String emailVal = loginemail.getText().toString();
+                String passVal = loginpass.getText().toString();
 
                 if (!validateEmail() | !validatePass()) {
 
                 } else {
-                    checkUser();
+//                    checkUser(); // I have commented it, Please make sure to update this code and the below code is where you can write what will happen
+
+                apiManager.testing_work(new APIManager.VolleyResponseListener() {
+                    @Override
+                    public void onError(String message) {
+                        Toast.makeText(Login.this,message,Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onResponse(Object response) {
+                        Toast.makeText(Login.this,response.toString(),Toast.LENGTH_SHORT).show();
+                    }
+                });
+
                 }
             }
         });
+
         //For "Login" button
 
         //For "Don't have an account?" text button
@@ -137,6 +158,7 @@ public class Login extends AppCompatActivity {
             return true;
         }
     }
+
 
     public void checkUser() {
 
